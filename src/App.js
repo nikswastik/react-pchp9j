@@ -8,6 +8,7 @@ export default function App() {
 
   const changeHandler = (text) => {
     console.log(text.target.value);
+    setTime(text.target.value);
   };
   return (
     <div>
@@ -15,7 +16,7 @@ export default function App() {
       <Login time={time} />
 
       {/* <Login /> */}
-
+{time}
       <h1>Hello StackBlitz!</h1>
       <p>Start editing to see some magic happen :)</p>
     </div>
